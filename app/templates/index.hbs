@@ -4,9 +4,13 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model as |rental|}}
-    {{rental-title rental=rental}}
+    {{rental-title rental=rental destroyRental="destroyRental"}}
   {{/each}}
 </ul>
+
+{{new-rental save2="save3"}}
+
+<!-- the save variables are named with a numeric sequence to illustrate actions flowing up from the component -->
 
 {{#link-to 'about'}}About{{/link-to}}<br>
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
