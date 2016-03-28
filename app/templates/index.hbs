@@ -1,6 +1,29 @@
 <h1> Welcome to Super Rentals </h1>
 
-We hope you find exactly what you're looking for in a place to stay.
+<h3>We hope you find exactly what you're looking for in a place to stay.</h3>
+
+{{#carousel-container transition-interval=400}}
+  {{#carousel-body}}
+    {{#carousel-item}}
+      {{#link-to 'announcements'}}
+        <img src="http://www.golfingmagli.com/wp-content/uploads/2011/09/special-announcement-77027411.jpg" alt="announcement"/>
+      {{/link-to}}
+    {{/carousel-item}}
+    {{#carousel-item}}
+      <img src="http://i.imgur.com/dzY9Y7B.jpg" alt="fancy building"/>
+    {{/carousel-item}}
+    {{#carousel-item}}
+      <img src="https://www.guardian.com/cs/groups/jsp/documents/web_assets/gi_001812.jsp?id=12005940&t=l" alt="fancy building"/>
+    {{/carousel-item}}
+  {{/carousel-body}}
+
+  {{#carousel-arrow direction="left" tagName="button"}}
+    Slide Left
+  {{/carousel-arrow}}
+  {{#carousel-arrow direction="right" tagName="button"}}
+    Slide Right
+  {{/carousel-arrow}}
+{{/carousel-container}}
 
 <ul>
   {{#each model as |rental|}}
