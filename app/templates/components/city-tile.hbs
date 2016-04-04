@@ -1,1 +1,6 @@
-<li>{{city.name}}, {{city.country}}</li>
+<li>{{city.name}}, {{city.country}}
+
+  {{#each city.rentals as |rental|}}
+    {{rental-title rental=rental update="update"}}
+    <button {{action 'destroyRental' rental}}>Delete</button>
+  {{/each}}</li>

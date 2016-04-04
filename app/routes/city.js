@@ -23,6 +23,10 @@ export default Ember.Route.extend({
         return city.destroyRecord();
       });
       this.transitionTo('index');
+    },
+    destroyRental(rental) {
+      return rental.destroyRecord();
+      this.transitionTo('city', rental.city_id)
     }
   }
 });
