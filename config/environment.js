@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'super-rentals',
     environment: environment,
-    firebase: 'https://blistering-inferno-8260.firebaseIO.com',
+    firebase: 'https://blistering-inferno-8260.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
