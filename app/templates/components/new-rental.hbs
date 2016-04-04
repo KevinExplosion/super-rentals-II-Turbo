@@ -24,7 +24,7 @@
 
     <div class="form-group">
       <label for="cost">Cash rules err'thing around me</label>
-      {{input value=cost id="cost" required="required"}}
+      {{input type="number" min=0 step=10 value=cost id="cost" required="required"}}
     </div>
 
     <button {{action 'save1'}}>Save</button>
