@@ -1,6 +1,8 @@
-<li>{{city.name}}, {{city.country}}
+<h5>Rentals available in {{fullLocation}}</h5>
 
-  {{#each city.rentals as |rental|}}
+<li>
+
+  {{#each sortedRentals as |rental|}}
     {{rental-title rental=rental update="update"}}
     <button {{action 'destroyRental' rental}}>Delete</button>
   {{/each}}</li>
